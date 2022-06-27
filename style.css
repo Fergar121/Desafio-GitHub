@@ -1,0 +1,119 @@
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 150px 300px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;   
+}
+
+.grid-item:first-child{
+    display: grid;
+   grid-column: 1 / span 2;
+}
+
+.grid-container-1{
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 200px 200px 200px;
+}
+
+.escudos-largo{
+    text-align: center;
+}
+
+.img{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-h2{
+    display: grid;
+    text-align: center;
+    font-size: large;
+    background-color: red;
+    font-family: fantasy;
+}
+.titulo-h2:hover{
+    transform: scale(2);
+}
+
+.parrafo-footer{
+    display: grid;
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+   position: absolute;
+   top: 1000px;
+}
+
+.texto-header-1{
+    display: grid;
+    position: relative;
+    text-align: right;
+    top: 10px;
+}
+.texto-header-1:hover{
+    color: red;
+}
+
+.texto-header-2{
+    display: grid;
+    position: relative;  
+}
+.texto-header-2:hover{
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    color: red;
+}
+
+.h2footer:hover{
+    -webkit-transform: skewX(-5deg);
+  transform: skewX(-5deg);
+}
+
+/* Pagina de Historia */
+
+.logo-1{
+    position: relative;
+    text-align: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1{
+    grid-area: 1 / 2 / 6 / 6; 
+}
+
+.div2{
+    border: 3px solid black;
+    display: grid;
+    grid-area: 1 / 1 / 6 / 2; 
+    position: relative;
+}
+
+.historia-river{
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+.footer-saludo{
+    font-size: 20px;
+    color: red;
+    font-family: fantasy;
+}
+
+@media (max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+}
